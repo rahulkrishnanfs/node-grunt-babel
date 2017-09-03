@@ -1,0 +1,13 @@
+--- a/gruntfile.js
++++ b/gruntfile.js
+@@ -21,8 +21,8 @@
+ 	});
+ 
+ 	grunt.loadTasks('tasks');
+-	grunt.loadNpmTasks('grunt-contrib-clean');
+-	grunt.loadNpmTasks('grunt-contrib-nodeunit');
++	grunt.loadNpmTasks('grunt-contrib-clean','/usr/lib/nodejs');
++	grunt.loadNpmTasks('grunt-contrib-nodeunit','/usr/lib/nodejs');
+ 
+ 	grunt.registerTask('default', ['clean', 'babel', 'nodeunit', 'clean']);
+ };

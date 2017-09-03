@@ -1,0 +1,27 @@
+Source: node-grunt-babel
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Rahulkrishnan R A <rahulkrishnanfs@gmail.com>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+ , node-babel-core
+ , grunt
+ , node-grunt-cli
+ , node-grunt-contrib-clean
+ , node-grunt-contrib-nodeunit
+Standards-Version: 4.0.0
+Homepage: https://github.com/babel/grunt-babel#readme
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-grunt-babel.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-grunt-babel.git
+
+Package: node-grunt-babel
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: grunt plugin for babel
+ .
+ Node.js is an event-based server-side JavaScript engine.

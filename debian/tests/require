@@ -1,0 +1,3 @@
+#!/bin/sh
+set -e
+grunt --gruntfile  ./debian/tests/gruntfile.js
